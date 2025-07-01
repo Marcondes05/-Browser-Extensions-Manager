@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Extensions Manager UI</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Topo com logo e botão de tema -->
+    <header class="top-bar">
+      <div class="logo-container">
+        <img src="./assets/images/logo.svg" alt="Logo" class="logo" />
+        <span class="logo-title"></span>
+      </div>
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+        <img id="theme-icon" src="./assets/images/icon-sun.svg" alt="Theme Icon" />
+      </button>
+    </header>
+
+    <!-- Título e filtros -->
+    <section class="main-section">
+      <h1>Extensions List</h1>
+      <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="active">Active</button>
+        <button data-filter="inactive">Inactive</button>
+      </div>
+    </section>
+
+    <!-- Lista de extensões -->
+    <main id="extension-list"></main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
